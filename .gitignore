@@ -1,0 +1,6 @@
+# Service account key file
+adams-lab-nanopore*.json 
+
+.DS_store
+.vscode
+cromwell/
