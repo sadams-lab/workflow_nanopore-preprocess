@@ -8,7 +8,6 @@ task Basecall {
         String sample_id
         Array[File] fast5_files
 
-        String docker_container
         Int threads
         Int gpus
         String ram
@@ -48,7 +47,7 @@ task Basecall {
         cpu: threads
         bootDiskSizeGb: 25
         memory: ram
-        docker: docker_container
+        docker: "adamslab/guppy"
         disks: "local-disk " + disk_size + " HDD"
         gpuType: "nvidia-tesla-p100"
         gpuCount: gpus

@@ -28,7 +28,7 @@ task Align {
     runtime {
         cpu: threads
         memory: ram
-        docker: docker_container
+        docker: "adamslab/minimap2"
         disks: "local-disk " + disk_size + " HDD"
     }
 	

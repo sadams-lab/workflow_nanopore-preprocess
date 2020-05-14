@@ -13,12 +13,10 @@ workflow NanoporePreprocess {
         File ref_fasta
         File ref_fasta_index
 
-        String guppy_docker = "adamslab/guppy"
         Int guppy_threads = 2
         Int guppy_gpus = 1
         String guppy_ram = "8 GB"
 
-        String align_docker = "adamslab/minimap2"
         Int align_threads = 16
         String align_ram = "32 GB"
     }
