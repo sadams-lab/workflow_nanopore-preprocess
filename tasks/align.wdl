@@ -7,8 +7,7 @@ task Align {
         File fastq_file
         File ref_fasta
         String sample_id
-
-        String docker_container
+        
         Int threads
         String ram
     }
