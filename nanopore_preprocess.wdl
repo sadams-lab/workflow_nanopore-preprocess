@@ -32,7 +32,6 @@ workflow NanoporePreprocess {
             threads = guppy_threads, 
             gpus = guppy_gpus,
             ram = guppy_ram,
-            disk_size = guppy_disk_size,
             sample_id = sample_id
     }
 
@@ -43,8 +42,7 @@ workflow NanoporePreprocess {
             sample_id = sample_id,
             docker_container = align_docker,
             ram = align_ram,
-            threads = align_threads,
-            disk_size = align_disk_size
+            threads = align_threads
     }
 
     output {
