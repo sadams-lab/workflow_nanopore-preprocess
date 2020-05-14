@@ -1,7 +1,7 @@
 version 1.0
 
-import "tasks/basecall.wdl" as basecall
-import "tasks/align.wdl" as align
+import "https://raw.githubusercontent.com/sadams-lab/workflow_nanopore-preprocess/master/tasks/basecall.wdl" as basecall
+import "https://raw.githubusercontent.com/sadams-lab/workflow_nanopore-preprocess/master/tasks/align.wdl" as align
 
 workflow NanoporePreprocess {
 
