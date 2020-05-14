@@ -26,7 +26,6 @@ workflow NanoporePreprocess {
             flowcell = flowcell,
             kit = kit, 
             fast5_files = fast5_files,
-            docker_container = guppy_docker,
             threads = guppy_threads, 
             gpus = guppy_gpus,
             ram = guppy_ram,
@@ -38,7 +37,6 @@ workflow NanoporePreprocess {
             fastq_file = bc.fastq_file,
             ref_fasta = ref_fasta,
             sample_id = sample_id,
-            docker_container = align_docker,
             ram = align_ram,
             threads = align_threads
     }
